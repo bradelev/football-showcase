@@ -1,0 +1,10 @@
+@import '../../../../assets/styles/variables';
+
+.HeaderLayout {
+  background-color: $grey--100;
+  border-bottom: 1px solid $grey--200;
+  color: $grey--400;
+  grid-area: header;
+  line-height: 40px;
+  padding: 0 16px;
+}

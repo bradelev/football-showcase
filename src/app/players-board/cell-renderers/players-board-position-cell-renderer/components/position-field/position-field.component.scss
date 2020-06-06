@@ -1,0 +1,93 @@
+.PositionField {
+  $_markerSize: 6px;
+  &-container {
+    display: flex;
+    align-items: center;
+  }
+  margin-right: 16px;
+  // display: flex;
+  // align-items: center;
+  width: 40px;
+  height: 25px;
+  // background: rgb(111, 175, 111);
+  background-image: url("/assets/images/soccer-field-background.jpg");
+  background-size: contain;
+  position: relative;
+  &-marker {
+    position: absolute;
+    display: block;
+    width: $_markerSize;
+    height: $_markerSize;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .5);
+    background: white;
+  }
+  &-GK {
+    left: 0;
+    top: calc(50% - #{$_markerSize} / 2);
+  }
+  &-LB {
+    left: 15%;
+    top: 0;
+  }
+  &-RCB,
+  &-LCB,
+  &-CB {
+    left: 15%;
+    top: calc(50% - #{$_markerSize} / 2);
+  }
+  &-RB {
+    left: 15%;
+    bottom: 0;
+  }
+  &-CDM {
+    left: calc(35% - #{$_markerSize} / 2);
+    top: calc(50% - #{$_markerSize} / 2);
+  }
+  &-LDM,
+  &-RDM,
+  &-CM,
+  &-LCM,
+  &-RCM {
+    left: calc(50% - #{$_markerSize} / 2);
+    top: calc(50% - #{$_markerSize} / 2);
+  }
+  &-LM {
+    left: calc(50% - #{$_markerSize} / 2);
+    top: 0;
+  }
+  &-RM {
+    left: calc(50% - #{$_markerSize} / 2);
+    bottom: 0;
+  }
+  &-LAM,
+  &-LW {
+    left: calc(75% - #{$_markerSize} / 2);
+    top: 0;
+  }
+  &-CAM {
+    left: calc(75% - #{$_markerSize} / 2);
+    top: calc(50% - #{$_markerSize} / 2);
+  }
+  &-RAM,
+  &-RW {
+    left: calc(75% - #{$_markerSize} / 2);
+    bottom: 0;
+  }
+  &-LS,
+  &-LF{
+    right: 0;
+    top: calc(25% - #{$_markerSize} / 2);
+  }
+  &-RF,
+  &-RS {
+    right: 0;
+    bottom: calc(25% - #{$_markerSize} / 2);
+  }
+  &-ST,
+  &-RS {
+    right: 0;
+    top: calc(50% - #{$_markerSize} / 2);
+  }
+
+}

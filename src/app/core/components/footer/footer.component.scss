@@ -1,0 +1,12 @@
+@import '../../../../assets/styles/variables';
+
+.FooterLayout {
+  align-items: flex-end;
+  background-color: $grey--100;
+  border-top: 1px solid $grey--200;
+  color: $grey--400;
+  display: flex;
+  grid-area: footer;
+  justify-content: center;
+  padding: $contentSpacing;
+}

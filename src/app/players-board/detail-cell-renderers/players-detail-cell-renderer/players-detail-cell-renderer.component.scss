@@ -1,0 +1,32 @@
+.PlayersDetail {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 16px;
+  background-image: -webkit-radial-gradient(ellipse,#ffffff 0,#eee 100%);
+  max-width: 1280px;
+  margin: 0 auto;
+  width: calc(100% - 32px);
+  height: 100%;
+  &-profile,
+  &-content {
+    display: flex;
+    flex: 0 1 auto;
+    padding: 16px;
+  }
+  &-profile {
+    width: 290px;
+  }
+  &-content {
+    flex-direction: column;
+    flex-grow: 2;
+  }
+  .PlayerInfo {
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .highcharts-credits {
+    display: none !important;
+  }
+}

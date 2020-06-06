@@ -1,0 +1,28 @@
+<div class="PlayersDetail">
+  <div class="PlayersDetail-profile">
+    <img [src]="imgStr" (error)="setDefaultPic()">
+  </div>
+  <div class="PlayersDetail-content">
+    <div class="PlayerInfo-wrapper">
+      <div class="PlayerInfo-info">
+          <h2>{{ params?.data?.Name }}</h2>
+          <h3>{{ params?.data?.Nationality }}</h3>
+
+        <p>Age: {{ params?.data?.Age }}</p>
+        <p>Club: {{ params?.data?.Club }}</p>
+        <p>Position: {{ params?.data?.Position }}</p>
+        <p>Value: {{ params?.data?.Value }}</p>
+        <p>Wage: {{ params?.data?.Wage }}</p>
+        <p>Contract finish: {{ params?.data['Contract Valid Until'] }}</p>
+      </div>
+      <div class="PlayerInfo-skills">
+        <app-player-skills
+          [playerData]="params.data"
+        ></app-player-skills>
+      </div>
+    </div>
+  </div>
+  <div class="PlayersDetail-skills">
+
+  </div>
+</div>

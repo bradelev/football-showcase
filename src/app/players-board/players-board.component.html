@@ -1,0 +1,12 @@
+
+<h1>List All Players<span *ngIf="criteria"> {{ criteria }}</span></h1>
+<button mat-stroked-button (click)="resetCountries()">Reset</button>
+<ag-grid-angular
+  class="ag-theme-material PlayerBoard-grid"
+  [rowData]="rowData$ | async"
+  [columnDefs]="columnDefs"
+  [gridOptions]="gridOptions"
+  (firstDataRendered)="onFirstDataRendered($event)"
+  (gridReady)="onGridReady($event)"
+>
+</ag-grid-angular>

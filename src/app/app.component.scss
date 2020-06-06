@@ -1,0 +1,17 @@
+@import '../assets/styles/variables';
+
+.AppLayout {
+  background-color: $white;
+  display: grid;
+  grid-template-areas: 
+    "header"
+    "mainContainer"
+    "footer";
+  grid-template-rows: 40px auto 80px;
+  height: 100vh;
+}
+
+.MainContainer {
+  grid-area: mainContainer;
+  padding: 0 $contentSpacing;
+}
