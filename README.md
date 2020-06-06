@@ -1,27 +1,25 @@
-# NgFootball
+# Footbal showcase
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
+## Installation steps
 
-## Development server
+- Clone this repo
+- `cd ng-football`
+- `npm i`
+- To start json-server `npm run start:server` creates a REST API on http://localhost:3000
+- Open new terminal tab `npm start` starts the UI on http://localhost:4200
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## UI Angular
+This project was generated with Angular CLI version 8.3.20.
 
-## Code scaffolding
+This showcase intends to show [ag-grid](https://www.ag-grid.com) and [Highcharts](https://www.highcharts.com) integrated on an Angular 8 application.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+As remarkable notes, are:
+- Usage of cell renderers to show custom content on cells [Ag-Grid Cell renderers](https://www.ag-grid.com/javascript-grid-cell-rendering-components/)
+- Master detail strategy, to expand rows and see custom detailed content [Ag-Grid Master detail](https://www.ag-grid.com/javascript-grid-master-detail/)
+- Highchart Polar, to show player stats [Highchart Polar spiderweb graph](https://www.highcharts.com/demo/polar-spider)
 
-## Build
+## Dataset and server
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+The dataset has been taken from [fifa18-all-player-statistics](https://github.com/amanthedorkknight/fifa18-all-player-statistics) repo
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+The server is launched using [json-server](https://github.com/typicode/json-server)
